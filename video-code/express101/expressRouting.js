@@ -13,15 +13,15 @@ const app = express();
 // 1. path
 // 2. callback to turn if an HTTP request that matches THIS verb is made to the path in #1
 
-app.all('/', (req, res) => {
-  res.send(`<h1>Welcome to the home page!`);
-})
+// app.all('/', (req, res) => {
+  // res.send(`<h1>Welcome to the home page!`);
+// })
 
 app.get('/', (req, res) => {
-
+  res.send(`<h1>Welcome to the home GET page!`);
 })
 app.post('/', (req, res) => {
-  
+  res.send(`<h1>Welcome to the home POST page!`);  
 })
 app.delete('/', (req, res) => {
   
